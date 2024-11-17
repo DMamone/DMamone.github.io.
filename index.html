@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final DPW I</title>
+    <link rel="stylesheet" href="CSS/estilos_inicio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav>
+        <div class="nav1">
+            <img src="Recursos/IMG/LogoEmpresa.png" alt="Logo de la APP">
+        </div>
+        <div class="nav2">
+            <i class="fas fa-desktop"></i>
+            <i class="fas fa-tablet-alt"></i>
+            <i class="fas fa-mobile-alt"></i>
+        </div>
+        <div class="nav3">
+            <ul>
+                <li><a href="#seccion_inicio">Inicio</a></li>
+                <li><a href="#seccion_funciones">Funciones</a></li>
+                <li><a href="#seccion_descargas">Descargas</a></li>
+                <li><a href="#seccion_contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sección Inicio -->
+    <section id="seccion_inicio">
+        <video class="videoFondo" autoplay muted loop>
+            <source src="Recursos/VIDEOS/video1.mp4" type="video/mp4">
+        </video>
+        <div id="contenido_inicio">
+            <div id="contenido_sup">
+                <h1>Bienvenidos a RENTALCAR</h1>
+                <p>La APP ideal para alquilar y gestionar tu vehículo estés donde estés.</p>
+            </div>
+            <div id="contenido_inf">
+                <div class="divisiones_contenido"><i class="fa-solid fa-gauge fa-3x" style="color: #fff0b8;"></i><br>Reserva rapida<br>y sencilla</div>
+                <div class="divisiones_contenido"><i class="fa-solid fa-stopwatch fa-3x" style="color: #fff0b8;"></i><br>Seguimiento en<br>tiempo real</div>
+                <div class="divisiones_contenido"><i class="fa-solid fa-calendar-days fa-3x" style="color: #fff0b8;"></i><br>Atencion las<br>24 horas</div>
+                <div class="divisiones_contenido"><i class="fa-solid fa-car fa-3x" style="color: #fff0b8;"></i><br>Opciones de<br>vehiculos</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Funciones -->
+    <section id="seccion_funciones">
+        <div id="busqueda">
+            <input type="text" placeholder="Buscar...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="funciones_contenido">
+            <i class="fa-regular fa-registered fa-5x" style="color: #bfbfbf;"></i>
+            <div class="funcion">Registro y autenticación de usuarios<br><br>
+                Gestion de perfil de usuario con datos como informacion personal, licencia de conducir, historial de rentas, entre otros.
+            </div>
+            <i class="fa-solid fa-car fa-5x" style="color: #bfbfbf;"></i>
+            <div class="funcion">Opciones de renta y reservación al instante<br><br>
+                Modulo para seleccionar opciones adicionales como seguro, asientos de niños, reserva y confirmacion en tiempo real.
+            </div>
+            <i class="fa-solid fa-map-location-dot fa-5x" style="color: #bfbfbf;"></i>
+            <div class="funcion">Busqueda y filtrado de vehículos verificados<br><br>
+                Opciones de busqueda por tipo de vehiculo, ubicacion, disponibilidad, precio, gps, marca, modelo.
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Sección Descargas -->
+    <section id="seccion_descargas">
+        <h2>RENTALCAR</h2>
+        <p>La app ideal para gestionar tu vehiculo estes donde estes</p>
+        <div class="contenedor">
+            <button class="btn-descarga"><i class="fa-brands fa-google-play" style="color: #ffffff;"></i> Descargar para Android</button>
+            <button class="btn-descarga"><i class="fa-brands fa-apple" style="color: #ffffff;"></i> Descargar para iOS</button>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="seccion_contacto">
+        <div class="mapaGoogle">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.10275042132!2d-56.19459598980548!3d34.90387087273489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81ceb54e547f%3A0x592102e53ece4546!2sInstituto%20Tecnologico%20de%20Informatica%20(UTU)!5e0!3m2!1ses!2suy!4v1730333889839!5m2!1ses!2suy" style="width:100%; height:100%; border:0;" allowfullscreen="" loading="lazy" referrerpolicy="noreferrer-when-downgrade"></iframe>
+        </div>
+        <div class="columnaDatos">
+            <div class="datosContacto">
+                <ul>
+                    <li><i class="fas fa-map-marker-alt" style="color: #1d9e7e;"></i> Dirección<br>Dr. Homero Gregorio y José Quesada</li>
+                    <li><i class="fas fa-phone" style="color: #1d9e7e;"></i> Teléfono<br>22006488</li>
+                    <li><i class="fas fa-envelope" style="color: #1d9e7e;"></i> Email<br>rentalcars@rental.com</li>
+                </ul>
+            </div>
+            <form id="formulario">
+                <span>
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="email" placeholder="Email" required>
+                </span>
+                <input type="email" placeholder="Asunto" required>
+                <input type="text" placeholder="Mensaje" required>
+                <button type="submit" class="input-mensaje" >Enviar</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
